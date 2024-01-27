@@ -52,7 +52,7 @@ export default function Navbar() {
                 </ul>
             </nav>
             {/* Navbar Desktop */}
-            <nav>
+            <nav className="hidden md:block">
                 <ul className="flex space-x-4 lg:space-x-8">
                     {navbarLinkItems.map((item, index) => (
                         <li key={index}>

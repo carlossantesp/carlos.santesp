@@ -5,8 +5,8 @@ import Navbar from "./navbar";
 
 export default function Header() {
     return (
-        <header className="relative bg-slate-800 shadow px-6">
-            <Container otherClass="flex justify-between h-16 items-center">
+        <header className="relative bg-slate-800 shadow">
+            <Container otherClass="flex justify-between h-16 items-center" id="header">
                 <Logo />
                 <Navbar />
                 <div className="hidden lg:block">
