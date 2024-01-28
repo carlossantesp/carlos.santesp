@@ -1,5 +1,7 @@
+import Button from "./button";
 import Container from "./container";
 import Description from "./description";
+import {IconRight} from "./icons";
 import ProjectsLists from "./projectslists";
 
 const itemsProjects = [
@@ -53,6 +55,12 @@ export default function SectionProjects() {
                 description="Check out these captivating and challenging projects I've crafted"
             />
             <ProjectsLists itemsProjects={itemsProjects} />
+            <footer className="w-max mx-auto">
+                <Button big link="https://github.com/carlossantesp">
+                    See more projects
+                    <IconRight />
+                </Button>
+            </footer>
         </Container>
     );
 }

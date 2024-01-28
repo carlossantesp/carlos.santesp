@@ -2,13 +2,8 @@ import Image from "next/image";
 import Button from "./button";
 import Tags from "./tags";
 import imgDefault from "../app/images/projects/pexabay.jpg";
-import {Lato} from "next/font/google";
-
-const lato = Lato({
-    weight: "700",
-    subsets: ["latin"],
-    display: "swap",
-});
+import {lato} from "./fonts";
+import {IconCode, IconLink} from "./icons";
 
 export default function Project({item}) {
     const {name, description, image, tags, repo, link} = item;
@@ -24,9 +19,13 @@ export default function Project({item}) {
             </section>
             <footer className="flex flex-col text-center space-y-4 md:flex-row md:space-y-0 md:justify-end md:space-x-4">
                 <Button secondary link={link}>
+                    <IconCode />
                     View Code
                 </Button>
-                <Button link={repo}>View Project</Button>
+                <Button link={repo}>
+                    <IconLink />
+                    View Project
+                </Button>
             </footer>
         </article>
     );

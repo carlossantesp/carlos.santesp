@@ -1,4 +1,5 @@
 import Link from "next/link";
+import {IconClose, IconMenu} from "./icons";
 
 export default function Navbar() {
     const navbarLinkItems = [
@@ -11,34 +12,12 @@ export default function Navbar() {
     return (
         <>
             <div className="rounded text-sky-400 hover:text-gray-300 hover:bg-sky-400 md:hidden">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    className="w-8 h-8"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                </svg>
+                <IconMenu />
             </div>
             {/* Navbar Mobile */}
             <nav className="hidden absolute w-3/4 md:w-1/4 min-h-screen bg-slate-800 right-0 top-0">
                 <div className="h-16 flex items-center justify-end pr-7">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        className="w-6 h-6"
-                    >
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
+                    <IconClose />
                 </div>
                 <ul className="flex flex-col space-y-4">
                     {navbarLinkItems.map((item, index) => (
