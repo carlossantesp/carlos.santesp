@@ -12,7 +12,7 @@ const itemsProjects = [
             "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
         repo: "https://github.com/carlossantesp/block-master-app",
         link: "https://block-master-app-cse.netlify.app/",
-        image: "/images/projects/block-master.jpg",
+        image: "/images/projects/blockmaster.png",
         tags: ["ReactJS", "StyledComponent", "Hooks", "Redux", "API"],
     },
     {
@@ -22,7 +22,7 @@ const itemsProjects = [
             "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
         repo: "https://github.com/carlossantesp/pexabay-react",
         link: "https://pexabay-react-app.netlify.app/",
-        image: "/images/projects/pexabay.jpg",
+        image: "/images/projects/pexabay.png",
         tags: ["ReactJS", "Async/Await", "API", "CSS Modules"],
     },
     {
@@ -32,7 +32,7 @@ const itemsProjects = [
             "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
         repo: "https://github.com/carlossantesp/landingpage-doll",
         link: "https://ladingpage-doll.netlify.app/",
-        image: "/images/projects/doll.jpg",
+        image: "/images/projects/doll.png",
         tags: ["ReactJS", "StyledComponent", "Landingpage"],
     },
     {
@@ -42,7 +42,7 @@ const itemsProjects = [
             "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
         repo: "https://github.com/carlossantesp/calel",
         link: "https://carlossantesp.github.io/calel/",
-        image: "/images/projects/calel.jpg",
+        image: "/images/projects/calel.png",
         tags: ["HTML5", "CSS3", "Flexbox", "Grid", "Javascript"],
     },
 ];

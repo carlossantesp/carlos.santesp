@@ -1,7 +1,6 @@
 import Button from "./button";
 import Container from "./container";
 import Image from "next/image";
-import photo_meBig from "@/app/images/me/photo_meBig.png";
 import {inter, lato} from "./fonts";
 import {IconGitHub, IconLinkedin, IconMail} from "./icons";
 
@@ -35,7 +34,7 @@ export default function Hero() {
                 </footer>
             </article>
             <article className="w-1/2 md:w-auto mx-auto md:mr-0 md:order-2">
-                <Image src={photo_meBig} alt="Carlos Santillan's photo" />
+                <Image src="/images/me/photo_meBig.png" alt="Carlos Santillan's photo" width={400} height={400} />
             </article>
         </Container>
     );
