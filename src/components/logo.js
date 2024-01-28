@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function Logo() {
     return (
-        <a href="" className="w-10 h-10">
+        <Link href="/" className="w-10 h-10">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 64 64">
                 <path
                     d="M55.5385 40.4225C53.7407 45.4469 50.3823 49.7642 45.9547 52.7429L44.6908 50.8642C48.7175 48.1553 51.7716 44.229 53.4066 39.6597L55.5385 40.4225Z"
@@ -45,6 +47,6 @@ export default function Logo() {
                     fill="#F0F1F2"
                 />
             </svg>
-        </a>
+        </Link>
     );
 }
