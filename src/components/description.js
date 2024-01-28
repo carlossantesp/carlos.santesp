@@ -1,10 +1,4 @@
-import {Lato} from "next/font/google";
-
-const lato = Lato({
-    weight: "700",
-    subsets: ["latin"],
-    display: "swap",
-});
+import {lato} from "./fonts";
 
 export default function Description({title, description}) {
     return (

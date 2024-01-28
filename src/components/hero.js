@@ -1,20 +1,8 @@
-import {Inter, Lato} from "next/font/google";
 import Button from "./button";
 import Container from "./container";
 import Image from "next/image";
 import photo_meBig from "@/app/images/me/photo_meBig.png";
-
-const lato = Lato({
-    weight: "700",
-    subsets: ["latin"],
-    display: "swap",
-});
-
-const inter = Inter({
-    weight: "700",
-    subsets: ["latin"],
-    display: "swap",
-});
+import {inter, lato} from "./fonts";
 
 export default function Hero() {
     return (
