@@ -9,7 +9,7 @@ const itemsProjects = [
         id: "1",
         name: "Block master application",
         description:
-            "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
+            "A cutting-edge application built with ReactJS and Redux, seamlessly connecting users to a movie API for detailed film information. Its intuitive interface ensures a user-friendly experience, making exploring the cinematic world effortless.",
         repo: "https://github.com/carlossantesp/block-master-app",
         link: "https://block-master-app-cse.netlify.app/",
         image: "/images/projects/blockmaster.png",
@@ -19,7 +19,7 @@ const itemsProjects = [
         id: "2",
         name: "Pexabay application",
         description:
-            "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
+            "A ReactJS app, connects to an API for easy access to a wide array of royalty-free images. Explore and download high-quality photos effortlessly with its user-friendly search.",
         repo: "https://github.com/carlossantesp/pexabay-react",
         link: "https://pexabay-react-app.netlify.app/",
         image: "/images/projects/pexabay.png",
@@ -29,7 +29,7 @@ const itemsProjects = [
         id: "3",
         name: "DOLL's Landing Page",
         description:
-            "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
+            "React-based landing page with styled-components, presenting sections like About Us, Services, and a subscription option. Tailored for a virtual bank, it provides a sleek and inviting overview for users to explore and subscribe.",
         repo: "https://github.com/carlossantesp/landingpage-doll",
         link: "https://ladingpage-doll.netlify.app/",
         image: "/images/projects/doll.png",
@@ -39,7 +39,7 @@ const itemsProjects = [
         id: "4",
         name: "Calel's Landing Page",
         description:
-            "An application that displays movie information developed with React, showcasing details about films in an engaging way.",
+            "Streamline your meeting scheduling professionally. This HTML5 landing page, featuring CSS3 grid and flexbox, eliminates email hassles, allowing you to dedicate more time to your work.",
         repo: "https://github.com/carlossantesp/calel",
         link: "https://carlossantesp.github.io/calel/",
         image: "/images/projects/calel.png",
@@ -56,7 +56,7 @@ export default function SectionProjects() {
             />
             <ProjectsLists itemsProjects={itemsProjects} />
             <footer className="w-max mx-auto">
-                <Button big link="https://github.com/carlossantesp">
+                <Button big link="https://github.com/carlossantesp?tab=repositories">
                     See more projects
                     <IconRight />
                 </Button>
