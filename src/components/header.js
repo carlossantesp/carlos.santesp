@@ -5,7 +5,7 @@ import Navbar from "./navbar";
 
 export default function Header() {
     return (
-        <header className="relative bg-slate-800 shadow">
+        <header className="sticky top-0 z-40 w-full bg-slate-800 shadow">
             <Container otherClass="flex justify-between h-16 items-center" id="header">
                 <Logo />
                 <Navbar />

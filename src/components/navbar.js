@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
     const navbarLinkItems = [
         {name: "About", path: "#about"},
@@ -44,9 +46,7 @@ export default function Navbar() {
                             key={index}
                             className="py-2 w-full text-center hover:bg-slate-950 hover:border-l-4 hover:border-sky-400 transition-colors"
                         >
-                            <a className="" href={item.path}>
-                                {item.name}
-                            </a>
+                            <Link href={item.path}>{item.name}</Link>
                         </li>
                     ))}
                 </ul>
@@ -56,12 +56,12 @@ export default function Navbar() {
                 <ul className="flex space-x-4 lg:space-x-8">
                     {navbarLinkItems.map((item, index) => (
                         <li key={index}>
-                            <a
+                            <Link
                                 className="hover:text-sky-400 transition-colors hover:border-b-2 hover:border-sky-400"
                                 href={item.path}
                             >
                                 {item.name}
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
