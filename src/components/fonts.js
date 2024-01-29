@@ -19,7 +19,7 @@ export const inter = Inter({
 });
 
 export const fira = Fira_Code({
-    weight: "400",
+    weight: "500",
     subsets: ["latin"],
     display: "swap",
 });
