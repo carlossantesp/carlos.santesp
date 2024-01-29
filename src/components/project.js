@@ -8,7 +8,7 @@ export default function Project({item}) {
     const {name, description, image, tags, repo, link} = item;
     return (
         <article className="bg-slate-800 rounded-lg shadow p-4 flex flex-col gap-4">
-            <header className="rounded-lg overflow-hidden h-56 md:h-72 lg:h-96">
+            <header className="rounded-lg overflow-hidden h-56 md:h-72 ">
                 <Image
                     className="w-full h-full object-cover object-top"
                     src={image}
