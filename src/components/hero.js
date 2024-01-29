@@ -1,3 +1,6 @@
+"use client";
+
+import {TypeAnimation} from "react-type-animation";
 import Button from "./button";
 import Container from "./container";
 import Image from "next/image";
@@ -9,10 +12,19 @@ export default function Hero() {
         <Container id="about" otherClass="py-14 grid grid-cols-1 md:grid-cols-2 md:items-center">
             <article className="space-y-4 text-center md:text-left order-2 md:order-1">
                 <h4 className={`${inter.className} md:text-sm mt-4 md:mt-0`}>Hello Everyone!</h4>
+
                 <h1 className={`${lato.className} text-4xl md:text-5xl`}>
                     I&apos;m <small className="text-4xl md:text-5xl text-sky-400">Carlos Santillan</small>
                 </h1>
-                <h2 className={`${lato.className} text-3xl md:text-4xl`}>Front-End Developer</h2>
+                <TypeAnimation
+                    preRenderFirstString={true}
+                    sequence={["Front-End Developer", 1000, "Web Developer", 500]}
+                    wrapper="h2"
+                    speed={20}
+                    cursor={true}
+                    repeat={Infinity}
+                    className={`${lato.className} text-3xl md:text-4xl`}
+                />
                 <p className="text-balance text-gray-400 max-w-xl md:text-lg">
                     Passionate frontend web developer merging code and design to craft captivating interfaces that
                     bridge aesthetics and functionality. In every line of code, I aim to evoke emotions and drive
