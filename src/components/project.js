@@ -22,7 +22,7 @@ export default function Project({item}) {
                 <h3 className={`${lato.className} text-3xl`}>{name}</h3>
                 <p className="hidden md:block text-gray-400">{description}</p>
             </section>
-            <footer className="flex justify-center text-center gap-4 md:flex-row md:justify-end">
+            <footer className="flex flex-col justify-center mx-12 sm:mx-0 gap-4 sm:flex-row md:justify-end">
                 <Button secondary link={link}>
                     <IconLink />
                     View Project
