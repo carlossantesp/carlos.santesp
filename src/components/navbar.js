@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+// import Link from "next/link";
 import {IconClose, IconMenu} from "./icons";
 import {useState} from "react";
 
@@ -46,9 +46,9 @@ export default function Navbar() {
                             key={index}
                             className="w-full text-center hover:bg-slate-950 hover:border-l-4 hover:border-sky-400 transition-colors cursor-pointer"
                         >
-                            <Link className="block py-4" href={item.path}>
+                            <a className="block py-4" href={item.path}>
                                 {item.name}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -59,12 +59,12 @@ export default function Navbar() {
                 <ul className="flex space-x-4 lg:space-x-8">
                     {navbarLinkItems.map((item, index) => (
                         <li key={index}>
-                            <Link
+                            <a
                                 className="hover:text-sky-400 transition-colors hover:border-b-2 hover:border-sky-400"
                                 href={item.path}
                             >
                                 {item.name}
-                            </Link>
+                            </a>
                         </li>
                     ))}
                 </ul>
